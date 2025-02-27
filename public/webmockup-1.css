@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+.First {
+    background-color: gray; /*30%*/
+    width: 100%;
+}
+
+.Navbar {
+    height: 10px;
+}
+
+.Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Navbar .Logo li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black; /*10%*/
+    font-size: 20px;
+    margin-left: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Navbar .menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.Navbar .menu li a {
+    margin: 0 10px; 
+    display: block;
+    color: black; /*10%*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Navbar .menu li a:hover {
+    color: white; /*60%*/
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 33% 55%;
+    gap: 10%;
+    height: auto;
+}
+
+.grid-item1-1{
+    background-color: transparent;
+}
+
+.grid-item1-2 {
+    background-color: white; /*60%*/
+    border-radius: 0 0 0 20px;
+    text-align: center;
+    height: 100%;
+}
+
+button{
+    background-color: transparent;
+    color: black; /*10%*/
+    border: 2px solid black; /*10%*/
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black; /*10%*/
+    color: white; /*60%*/
+}
+
+i {
+    display: inline-block;
+    text-align: center;
+}
+
+.Second {
+    background-color: white; /*60%*/
+    padding: 7%;
+    padding-top: 3%;
+
+}
+
+.Container {
+    text-align: center;
+}
+
+.Container-Pola {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5%;
+    height: auto;
+}
+
+.Polaroid {
+    background-color: white; /*60%*/
+    text-align: center;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.Pola-pic {
+    background-color: gray; /*30%*/
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.Polaroid button {
+    background-color: transparent;
+    color: gray; /*30%*/
+    border: 2px solid gray; /*30%*/
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.Polaroid button:hover {
+    background-color: gray; /*30%*/
+    color: white; /*60%*/
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+    height: auto;
+}
+
+.grid-item2-1 {
+    background-color: gray; /*30%*/
+    border-radius: 20px 0 20px 0;
+    text-align: start;
+}
+
+.grid-item2-2 {
+    background-color: white; /*60%*/
+    border-radius: 20px 0 20px 0;
+    text-align: start;
+}
+
+.fa {
+    color: black; /*10%*/
+}

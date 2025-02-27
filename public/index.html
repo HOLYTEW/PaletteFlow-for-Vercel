@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaletteFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="fixed-black-border">
+        <img src="assets/navbarBG.png" id="navbarBG">
+        <div class="logo">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <span class="logo-bold">Palette</span><span class="logo-light">Flow</span>
+            </a>
+        </div>
+        <div class="logo-icon">
+            <img src="assets/triple_icon.png">
+        </div>
+
+        <a href="/tool" class="nav-text tools-text">เครื่องมือ</a>
+
+        <a href="/about" class="nav-text about-text">เกี่ยวกับเรา</a>
+    </div>
+    <div class="fixed-inner-black-border"></div>
+
+    <main></main>
+
+    <footer class="palette-flow-footer">
+        <div class="footer-container">
+            <div class="footer-column" id="footer-logo">
+                <span class="logo-bold">Palette</span>Flow
+            </div>
+            <div class="footer-column" id="footer-menu">
+                <div class="menu-title">เมนู
+                    <ul class="menu-list">
+                        <li><a href="/tool">เครื่องมือ</a></li>
+                        <li><a href="palette">พาลเลต</a></li>
+                        <li><a href="about">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column" id="footer-contact">
+                <div class="menu-title">ติดต่อเรา
+                    <ul class="menu-list">
+                        <li>
+                            <img src="assets/mail.png" alt="" class="footer-icon">
+                            <a href="#gmail">PaletteFlow@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="assets/call.png" alt="" class="footer-icon">
+                            <a href="#telephone">089-999-9999</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const wallpaper = document.querySelector('.wallpaperPalette');
+        document.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const maxOpacity = 0.6; // Maximum opacity for the darkening effect
+            const maxScroll = window.innerHeight / 2.5; // Adjust this based on how quickly you want it to darken
+
+            const opacity = Math.min(maxOpacity, scrollPosition / maxScroll * maxOpacity);
+
+            wallpaper.style.filter = `brightness(${1 - opacity})`;
+        });
+    });
+      </script>
+</body>
+</html>
